@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap:,300,500,600,700,800,900");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
+
+/* main body */
+
+/* scroll behaviour smooth added to give smooth scrolling
+ effect*/
+body,
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  /* added for ios devices */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* removing all margins and padding from bootsrap rows an cols */
+.container-fluid,
+.container,
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+/* end main body */
+
+/* reusable componets */
+.text-barlow {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.text-oswald {
+  font-family: "Oswald", sans-serif;
+}
+/* callout section main page */
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* media querys */
+
+/* for small tablets */
+
+@media (min-width: 567px) and (max-width: 991px) {
+}
+/* for larger tablets */
+@media (min-width: 992px) and (max-width: 1180px) {
+}
+/* for laptops */
+@media (min-width: 1200px) {
+}
+/* for large desktop */
+/* slight adjustments where made here for navbar and call out sections for larger desktops  */
+@media (min-width: 1400px) {
+}
