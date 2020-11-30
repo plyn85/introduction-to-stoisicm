@@ -9,34 +9,39 @@
     </head>
     <body>
         <!-- Navigation from https://getbootstrap.com/docs/4.0/components/navbar/-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="history.html">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stoics.html">Famous Stotics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">Resources</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Full Page Image Header with Vertically Centered Content from https://startbootstrap.com/snippets/full-image-header- -->
@@ -44,20 +49,34 @@
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
                     <div class="col-12 text-center">
-                        <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-                        <p class="lead">A great starter layout for a landing page</p>
+                        <h1 class="font-weight-light white text-oswald">Introduction to Stoisicm</h1>
+                        <p class="lead white text-barlow">Stoic Philosophy and the Stocis.</p>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Page Content -->
         <section class="py-5">
-            <div class="container">
-                <h2 class="font-weight-light">Page Content</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
-            </div>
-        </section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </body>
-</html>
+            <div class="container-fluid row">
+                <div class="col-12 col-md-8">
+                    <h2 class="text-barlow text-center font-weight-bold">About Stoicism</h2>
+                    <p class="text-roboto mt-4 ml-2 main-page-para">
+                        Stoicism is a school of philosophy that hails from ancient Greece and Rome in the early parts of the 3rd century, BC. It is a philosophy of life that maximizes positive emotions, reduces negative emotions and helps individuals to hone their virtues of character.Simply put, Stoicism was designed to help people live their best possible lives.
+
+                    It’s a philosophy of life that maximizes positive emotions, reduces negative emotions and helps individuals to hone their virtues of character.
+                    
+                    At any moment, in any situation, and at any stage of life, Stoicism provides a framework for living well. It reminds people of what is truly important, providing practical strategies to get more of what is valuable.
+                    
+                    Stoicism was deliberately created to be understandable, actionable and useful. Practicing Stoicism doesn’t require learning an entirely new philosophical lexicon or meditating for hours a day. Instead, it offers an immediate, useful and practical way to find tranquility and improve one’s strengths of character.
+                    
+                    The creation of this guide has these goals in mind.
+                    </p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <img src="images/stotic_img.jpeg" alt="an image of an ancient statue">
+                </div>
+            </section>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </body>
+    </html>

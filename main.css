@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Oswald&display=swap:,300,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300,500,600,700,800,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
 
 /* main body */
-
 /* scroll behaviour smooth added to give smooth scrolling
- effect*/
+effect*/
 body,
 html {
   font-size: 16px;
   scroll-behavior: smooth;
   /* added for ios devices */
   -webkit-overflow-scrolling: touch;
+  color: rgb(61, 60, 60);
+  background-color: rgb(252, 247, 247);
 }
 
 /* removing all margins and padding from bootsrap rows an cols */
@@ -30,29 +32,72 @@ html {
 .text-oswald {
   font-family: "Oswald", sans-serif;
 }
+.text-roboto {
+  font-family: "Roboto", sans-serif;
+}
+/* colors */
+
+.white {
+  color: #ffffff;
+}
+
+/* navbar */
+.nav-item {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+/* adding margin for larger devices */
+
 /* callout section main page */
 .masthead {
   height: 100vh;
-  min-height: 500px;
-  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
+  min-height: 33rem;
+  background-position-x: 50%;
+  background-image: url("images/stoicism.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+/* main page */
+p {
+  font-weight: 400;
+  line-height: 2rem;
+}
 
+/* history page */
+.video {
+  margin-top: 8rem;
+}
 /* media querys */
 
-/* for small tablets */
+/* for small tablets and mobile*/
 
-@media (min-width: 567px) and (max-width: 991px) {
+@media (max-width: 991px) {
+  /* keeping smaller text for mobile */
 }
-/* for larger tablets */
-@media (min-width: 992px) and (max-width: 1180px) {
+/* for tablets  and bigger*/
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: 16rem;
+  }
+  .nav-item {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+  }
+  .main-page-para {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
 }
 /* for laptops */
 @media (min-width: 1200px) {
 }
 /* for large desktop */
-/* slight adjustments where made here for navbar and call out sections for larger desktops  */
 @media (min-width: 1400px) {
+}
+
+* {
+  border: 2px soild red;
 }
