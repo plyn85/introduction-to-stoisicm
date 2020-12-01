@@ -119,6 +119,10 @@ p {
     background-position: center;
     background-repeat: no-repeat;
   }
+  /* adjustments to video for mobile */
+  .video {
+    max-width: 20rem;
+  }
 }
 /* for tablets*/
 @media (min-width: 767px) and (max-width: 1180px) {
