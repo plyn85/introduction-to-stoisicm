@@ -79,9 +79,12 @@ html {
 /* callout section main page */
 .masthead {
   height: 100vh;
-  min-height: 33rem;
-  background-position-x: 50%;
-  background-image: url("images/stoicism.jpg");
+  /* min-height: 33rem; */
+  /* background-position-x: 50%; */
+  background: url("images/stoicism.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,13 +106,42 @@ p {
 }
 /* media querys */
 
-/* for small tablets and mobile*/
+/* for mobile*/
 
-@media (max-width: 991px) {
-  /* keeping smaller text for mobile */
+@media (max-width: 767px) {
+  /* background image for mobile  */
+  .masthead {
+    background: url("images/mobile_stoic.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-/* for tablets  and bigger*/
-@media (min-width: 992px) {
+/* for tablets*/
+@media (min-width: 767px) and (max-width: 1180px) {
+  /* background image for tablets */
+  .masthead {
+    background: url("images/unnamed.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /* adjusmets to callout text for tablets */
+  .callout-text {
+    margin-top: 13rem;
+  }
+  .callout-text h1 {
+    font-size: 3rem;
+  }
+}
+/* for larger tablets and above  */
+@media (min-width: 1023px) {
   .navbar-nav {
     margin-left: 16rem;
   }
@@ -123,14 +155,4 @@ p {
   p {
     font-size: 1.3rem;
   }
-}
-/* for laptops */
-@media (min-width: 1200px) {
-}
-/* for large desktop */
-@media (min-width: 1400px) {
-}
-
-* {
-  border: 2px soild red;
 }
