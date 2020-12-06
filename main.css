@@ -3,8 +3,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css");
 
 /* main body */
+
 /* scroll behaviour smooth added to give smooth scrolling
 effect*/
+
 body,
 html {
   width: 100%;
@@ -17,6 +19,7 @@ html {
 }
 
 /* removing all margins and padding from bootsrap rows an cols */
+
 .container-fluid,
 .container,
 .row {
@@ -27,15 +30,19 @@ html {
 /* end main body */
 
 /* reusable componets */
+
 .text-barlow {
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
 .text-oswald {
   font-family: "Oswald", sans-serif;
 }
+
 .text-roboto {
   font-family: "Roboto", sans-serif;
 }
+
 /* colors */
 
 .white {
@@ -43,17 +50,20 @@ html {
 }
 
 /* navbar */
+
 /* Modify the background color */
 
 .navbar-custom {
   background-color: rgb(185, 189, 185);
 }
+
 /* Modify brand and text color */
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
   color: rgb(40, 41, 40);
 }
+
 .nav-item a {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
@@ -77,6 +87,7 @@ html {
 /* adding margin for larger devices */
 
 /* callout section main page */
+
 .masthead {
   height: 100vh;
   /* min-height: 33rem; */
@@ -89,21 +100,28 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /* main page */
+
 p {
   font-weight: 400;
   line-height: 2rem;
 }
 
 /* history page */
+
 .video {
   margin-top: 8rem;
+  width: 35rem;
+  height: 20rem;
 }
 
 /* resources page */
+
 .podcast-text {
   line-height: 2rem;
 }
+
 /* media querys */
 
 /* for mobile*/
@@ -124,7 +142,9 @@ p {
     max-width: 20rem;
   }
 }
+
 /* for tablets*/
+
 @media (min-width: 767px) and (max-width: 1180px) {
   /* background image for tablets */
   .masthead {
@@ -140,11 +160,10 @@ p {
   .callout-text {
     margin-top: 13rem;
   }
-  .callout-text h1 {
-    font-size: 3rem;
-  }
 }
+
 /* for larger tablets and above  */
+
 @media (min-width: 1023px) {
   .navbar-nav {
     margin-left: 16rem;
