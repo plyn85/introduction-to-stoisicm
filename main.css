@@ -4,9 +4,6 @@
 
 /* main body */
 
-/* scroll behaviour smooth added to give smooth scrolling
-effect*/
-
 body,
 html {
   width: 100%;
@@ -77,7 +74,7 @@ html {
   color: rgb(40, 41, 40);
 }
 
-/* tageting all links on hover */
+/* targeting all nav links on hover */
 
 .nav-item a:hover {
   color: #000000;
